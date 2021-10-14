@@ -1,5 +1,11 @@
 # Explanation of modified points (required)
+todo1: DFSを開始するために開始点を関数dfsに入力
+todo2: 現在いる頂点を訪問済みにする
+todo3: 未探索の頂点を再帰的に訪問することで深さ優先探索を実現している
 
+todo4: 開始点の頂点をキューに追加
+todo5: キューに追加した頂点を訪問済みにする
+todo6: 現在いる頂点と隣接し接続されている頂点をキューに繰り返し追加することで幅優先探索を実現
 
 # Discussion (if needed)
 
