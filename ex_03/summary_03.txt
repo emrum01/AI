@@ -1,5 +1,15 @@
 # Explanation of modified points (required)
+– What are the algorithms used in this project?
+bfs&dfs
 
+– Describe the algorithms briefly based on your understanding.
+Depth-first search is an algorithm for exploring graphs and tree structures that searches for neighboring nodes without retracing its path until it comes across a dead-end node where it cannot proceed any further.
+
+
+Width-first search is an algorithm for exploring tree or graph structures. It starts from the starting node, explores the neighboring nodes, and then explores the neighboring nodes repeatedly to find the desired node. Since breadth-first search exhaustively searches all nodes, it can be said to be a method for exhaustively examining all nodes.
+
+– Explain the meaning of the results obtained by running the completed program.
+In addition to the previous exercise, we can now deal with graphs with costs and compare the efficiency of different algorithms.
 
 # Discussion (if needed)
 
