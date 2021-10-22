@@ -1,0 +1,14 @@
+Start inference
+Target: unknown_animal
+Observations: has_body_hair has_sharp_teeth has_sharp_claws has_brown_body_color has_medium_sized_body 
+Output format: is_used time_tag if(XXX) -> then(YYY)
+----------------------------------------------------------------------------------------------------
+Conclusion: unknown_animal has_medium_sized_body
+
+Start inference
+Target: unknown
+Observations: c1 c2 
+Output format: is_used time_tag if(XXX) -> then(YYY)
+----------------------------------------------------------------------------------------------------
+Conclusion: unknown c2
+
