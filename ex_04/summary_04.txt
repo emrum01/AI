@@ -1,4 +1,17 @@
 # Explanation of modified points (required)
+– What are the algorithms used in this project? 
+	UNIFORM_COST, BEST_FIRST, A*
+
+– Describe the algorithms briefly based on your understanding. 
+	Uniform-cost search is an uninformed search algorithm. This uses the lowest cumulative cost to find a path to the destination The uniform-cost search is then implemented using a Priority Queue.
+	
+	The best-first search is a search algorithm that extends the breadth-first search to select the most desirable node to search next according to some rule. If the queue is not sorted by an evaluation function, it becomes a breadth-first search.
+	
+	The A* algorithm is a type of search algorithm. It is an algorithm that represents a path as a node, calculates the path from the start node (starting point) to the goal node (target point), and guarantees that this path is the shortest. And even if there is an obstacle between the start and the goal, it will bypass it properly.
+
+
+– Explain the meaning of the results obtained by running the completed program.
+Based on the input graph, the program calculates and outputs the cost and the path with the minimum cost for each algorithm.
 
 
 # Discussion (if needed)
