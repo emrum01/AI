@@ -109,16 +109,16 @@ static void base_bfs(Graph const *g, SearchType type)
     switch (type)
     {
     case SEARCH_TYPE_BFS:
-        s_queue_init((const float *)SEARCH_TYPE_BFS);
+        s_queue_init(NULL);
         break;
     case SEARCH_TYPE_UNIFORM_COST:
-        s_queue_init((const float *)SEARCH_TYPE_UNIFORM_COST);
+        s_queue_init(accumulate_costs);
         break;
     case SEARCH_TYPE_BEST_FIRST:
-        s_queue_init((const float *)SEARCH_TYPE_BEST_FIRST);
+        s_queue_init(g->heuristic_values);
         break;
     case SEARCH_TYPE_ASTAR:
-        s_queue_init((const float *)SEARCH_TYPE_ASTAR);
+        s_queue_init(eval_values);
         break;
     }
 
@@ -218,7 +218,7 @@ static void base_bfs(Graph const *g, SearchType type)
                 child_accumulate_cost = accumulate_costs[current_vertex] + g->edge_costs[current_vertex][i];
 
                 // TODO: 4. Calculate `child_eval_value`.
-                child_eval_value = child_accumulate_cost + g->heuristic_values[i];
+                child_eval_value = eval_values[current_vertex] + g->edge_costs[current_vertex][i] + (g->heuristic_values[i] - g->heuristic_values[current_vertex]);
 
                 if (*child_vertex_state == UNVISITED)
                 {
