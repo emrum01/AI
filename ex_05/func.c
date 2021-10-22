@@ -125,7 +125,8 @@ static Rule *resolve_conflict(ProductionSystem const *p_system)
         if (p_system->conflict_set[i]->is_used == false)
         {
             // TODO: 1. add rule into the selected rules when the i-th element in the conflict set was not used.
-            selected_rules[i] = p_system->conflict_set[i];
+            selected_rules[num_selected_rules] = p_system->conflict_set[i];
+            num_selected_rules++;
         }
     }
 
