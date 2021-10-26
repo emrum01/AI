@@ -1,10 +1,16 @@
 # Explanation of modified points (required)
+探索アルゴリズムを選択するswitch-case文
+探索ノード、探索コスト、eval value の初期化
+uniform cost searchでキューに追加するときの現在のノードの状態を変更
+A*探索時の子ノードの評価値を定義した
+A*においてノードをキューに追加する処理をした
+
 – What are the algorithms used in this project? 
 	UNIFORM_COST, BEST_FIRST, A*
 
 – Describe the algorithms briefly based on your understanding. 
 	Uniform-cost search is an uninformed search algorithm. This uses the lowest cumulative cost to find a path to the destination The uniform-cost search is then implemented using a Priority Queue.
-	
+
 	The best-first search is a search algorithm that extends the breadth-first search to select the most desirable node to search next according to some rule. If the queue is not sorted by an evaluation function, it becomes a breadth-first search.
 	
 	The A* algorithm is a type of search algorithm. It is an algorithm that represents a path as a node, calculates the path from the start node (starting point) to the goal node (target point), and guarantees that this path is the shortest. And even if there is an obstacle between the start and the goal, it will bypass it properly.
