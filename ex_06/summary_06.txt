@@ -1,0 +1,22 @@
+# Explanation of modified points (required)
+1: フレームの中から生徒の情報を探すためにループを回す。
+2: 探している名前とフレームに格納されている名前を比べていく。
+3: ヒント:返り値のtargetが後のexecute_command()でどのように使われているのか確認する
+
+– What kind of ontology is used in this project?
+semantic network.
+– Describe the method briefly based on your understanding.
+The knowledge is
+represented by a directed graph.
+– Explain the meaning of the results obtained by running the
+completed program.
+Making it answer questions,or making it confirm your
+decisions
+
+# Discussion (if needed)
+
+
+# Comments (if needed)
+
+
+
