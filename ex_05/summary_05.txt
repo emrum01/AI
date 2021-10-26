@@ -1,5 +1,18 @@
 # Explanation of modified points (required)
+1. add rule into the selected rules when the i-th element in the conflict set was not used.
+2. In following strategy execution, you must specify optimal rule for each case.
+3. Return newest rule.
+4. Set a suitable comparator function as the argument.
+5. Return effective rule which contains many conditions.
+6. Generate random index using `rand_xorshift`.
 
+– What are the algorithms used in this project?
+    Inference engine
+– Describe the algorithms briefly based on your understanding.
+    An inference engine is a mechanism that derives answers from a knowledge base. It provides a way to perform inferences and draw conclusions based on the information in the knowledge base.
+– Explain the meaning of the results obtained by running the
+    LEX戦略を用いた前向き推論を行い、競合集合を解決する。
+completed program.
 
 # Discussion (if needed)
 
