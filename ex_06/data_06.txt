@@ -1,4 +1,5 @@
-15 4
+16 4
+Iwakubo MALE 50 50 50 50
 Abe MALE 90 89 80 77
 Watanabe FEMALE 80 88 81 50
 Ryo MALE 80 85 79 79
@@ -25,3 +26,11 @@ ask Yamada average
 ask Verybad average
 ask Kobayashi average
 conf Yamada average 74.75
+ask Iwakubo gender
+ask Iwakubo rank
+ask Iwakubo scholarship
+ask Iwakubo average
+conf Iwakubo rank 10
+conf Iwakubo rank 6
+conf Yamada gender MALE
+

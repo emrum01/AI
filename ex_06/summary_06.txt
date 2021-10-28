@@ -1,7 +1,7 @@
 # Explanation of modified points (required)
-1: フレームの中から生徒の情報を探すためにループを回す。
-2: 探している名前とフレームに格納されている名前を比べていく。
-3: ヒント:返り値のtargetが後のexecute_command()でどのように使われているのか確認する
+1: ループを回すことでフレームの中を順に参照し生徒の情報を探す。
+2: 探したい名前とフレームに格納されている生徒の名前を順に比較していく。
+3: targetに生徒の情報を代入。
 
 – What kind of ontology is used in this project?
 semantic network.

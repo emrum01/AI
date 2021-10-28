@@ -21,3 +21,17 @@ ask Kobayashi average
 -> 60.50
 conf Yamada average 74.75
 -> You are right.
+ask Iwakubo gender
+-> MALE
+ask Iwakubo rank
+-> 12
+ask Iwakubo scholarship
+-> Scholarship_None
+ask Iwakubo average
+-> 50.00
+conf Iwakubo rank 10
+-> You are wrong.
+conf Iwakubo rank 6
+-> You are wrong.
+conf Yamada gender MALE
+-> You are right.
