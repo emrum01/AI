@@ -138,7 +138,7 @@ static double inference(FuzzyRule const* rules, size_t rule_count) {
 
     for (size_t i = 0; i < rule_count; i++) {
         // TODO: 2. Write codes based on Mamdani's fuzzy inference method.
-        max_value = MAX(max_value, compute_memberships(rules));
+        max_value = MAX(max_value, compute_memberships(rules + i));
     }
     return max_value;
 }
@@ -150,14 +150,12 @@ static double inference(FuzzyRule const* rules, size_t rule_count) {
  */
 static double compute_memberships(FuzzyRule const* rule) {
     double min_value = DBL_MAX;
-
     for (size_t i = 0; i < rule->function_count; i++) {
         // TODO: 3. Write codes based on Mamdani's fuzzy inference method.
-        FuncMembership f = rule->membership_funcs;
-        double* arg = rule->function_arguments;
+        FuncMembership f = *rule->membership_funcs;
+        double* arg = *rule->function_arguments;
         min_value = MIN(min_value, f(*arg));
     }
-
     return min_value;
 }
 
