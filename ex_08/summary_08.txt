@@ -1,5 +1,5 @@
 # Explanation of modified points (required)
-
+論理関係を考えながら正しく、コーディングした。
 
 # Discussion (if needed)
 
