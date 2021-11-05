@@ -141,9 +141,9 @@ void print_car_speed_control_fuzzy(void)
 
             for (deceleration = 0.0; deceleration <= 40.0; deceleration += delta) {
                  // TODO: 1. Fill in the bank parts for defuzzy using centroid.
-                double membership_value  = inference(/* ----------------- */);
-                numerator               += /* --------------------------------------- */;
-                denominator             += /* ------------------------ */;
+                double membership_value  = inference(rules,rule_count);
+                numerator               += membership_value*delta*deceleration;
+                denominator             += membership_value*delta;
             }
 
             if (0.0 < denominator) {
@@ -175,7 +175,7 @@ static double inference(FuzzyRule const* rules, size_t rule_count)
 
     for (size_t i = 0; i < rule_count; i++) {
         // TODO: 2. Write codes based on Mamdani's fuzzy inference method.
-        /* --------------------------------------- */
+        max(max_value,compute_memberships(rules[i]));
     }
 
 

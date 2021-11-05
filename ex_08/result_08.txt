@@ -1,1 +1,1 @@
-/bin/sh: 1: sicstus: not found
+/bin/sh: sicstus: command not found
