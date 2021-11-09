@@ -245,8 +245,7 @@ double validate(Dataset const* dataset, size_t* predicted_labels,
     for (size_t i = 0; i < dataset->feature_count; i++) {
         // TODO: 4. Count the number of valid results (predicted label == truth
         // label or not).
-        printf("%f", &predicted_labels[i]);
-        if (predicted_labels[i]) {
+        if (predicted_labels[i] == dataset->features[i].label) {
             correct_count++;
         }
     }
