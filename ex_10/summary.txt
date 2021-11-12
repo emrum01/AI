@@ -1,5 +1,5 @@
 # Explanation of modified points (required)
-
+コードからパターン認識プログラムの動作を予想しつつ、実装箇所を記述した。
 
 # Discussion (if needed)
 
