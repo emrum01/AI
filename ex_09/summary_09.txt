@@ -1,10 +1,8 @@
 # Explanation of modified points (required)
 
+v,rが小さくなるほど、bは指数関数的に大きくなる。
 
 # Discussion (if needed)
 
 
 # Comments (if needed)
-
-
-
